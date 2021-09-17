@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <script src="assets/js/bootstrap.js" charset="utf-8"></script>
+    <script src="assets/js/aos.js" charset="utf-8"></script>
+    <script src="assets/js/jquery.js" type="text/javascript" ></script>
+  <script>
+    $.get("header.html", function (response) {
+      $("#header").html(response);
+    });
+    $.get("footer.html", function (response) {
+      $("#footer").html(response);
+    });
+  </script>
+  <script type="text/javascript">
+    function selects(){  
+      var ele=document.getElementsByName('panel');  
+      for(var i=0; i<ele.length; i++){  
+        if(ele[i].type=='checkbox')  
+          ele[i].checked=true;  
+        }  
+      }  
+    function deSelect(){  
+      var ele=document.getElementsByName('panel');  
+      for(var i=0; i<ele.length; i++){  
+        if(ele[i].type=='checkbox')  
+          ele[i].checked=false;  
+        }  
+      }   
+  </script>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div class="hero-section-small hero-section-faq">
+    <!-- Hero Section start -->
+    <div class="container">
+      <div class="banner-container">
+        <div data-aos="fade-left" data-aos-duration="700" class="banner-light">
+          <h2 class="headline-hero">Häufig gestellte Fragen</h2>
+        </div>
+        <div style="margin-top: 20px; display: grid; justify-items: end;">
+          <div data-aos="fade-left" data-aos-duration="700" class="banner-dark" align="right">
+            <h2 class="copy-small-header">Unser Erfolgskonzept – Die <span class="copy-small-span">Digital Value Chain</span> <span> <img src="assets/images/icons/link-arrow.png"> </span> </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section end -->
+  <section id="faq" class="faq-section">
+    <div class="padding-100"></div>
+    <div class="container">
+      <div class="col-lg-9 col-md-10 col-sm-12 col-xs-12 text-end" style="margin-bottom: 30px;">
+        <button class="button-dark float-right" onclick="selects()">Alle öffnen</button> <span class="copy-std-headline">&nbsp;&nbsp;/&nbsp;&nbsp;</span> 
+        <button class="button-dark float-right" onclick="deSelect()">Alle schließen</button>
+      </div>
+      <div class="accordion col-lg-9 col-md-10 col-sm-12 col-xs-12">
+        <h2 class="copy-std-headline padding-30">Über unsere Leistungen</h2>
+        <!-- Panel 1 -->
+        <div>
+          <input type="checkbox" name="panel" id="panel-1" />
+          <label for="panel-1" class="copy-std">Wie kann ich die Digital Value Chain für mich einsetzen? Für welche Zwecke eignet es sich?</label>
+          <div class="accordion__content accordion__content--large">
+            <p class="accordion__body copy-small col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              Mit unserer <u><a class="legal-link" href="index.html">Digital Value Chain</a></u> schaffen Sie ganz neue Möglichkeiten, um Beschaffungsprobleme zu lösen, Fehlteile zu reduzieren und auch Bauteile on demand zu liefern. Hierbei machen Sie sich die Vorzüge der Digitale Transformation zu Nutze und bringen diese in Ihr Unternehmen. Gehen Sie aktiv in die Richtung einer digitalen Lagerhaltung und generieren Sie gleichzeitig eine bessere Datenqualität für Ihr Unternehmen.
+            </p>
+          </div>
+        </div>
+        <!-- Panel 2 -->
+        <div>
+          <input type="checkbox" name="panel" id="panel-2" />
+          <label for="panel-2" class="copy-std">Für wen eignen sich die Workshops und Serviceleistungen?</label>
+          <div class="accordion__content accordion__content--large">
+            <p class="accordion__body copy-small col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              Unser Angebot an Workshops und Dienstleistungen eignet sich vorzugsweise für Unternehmen im B2B Umfeld. <br>
+              Mit unseren Workshops und Webinaren schaffen wir zunächst ein Grundverständnis für die einzelnen Themenbereiche rund um unsere Digital Value Chain im Umfeld der Additiven Fertigung. Hier möchten wir Ihnen in erster Linie einige wichtige Leitplanken an die Hand geben. 
+              Im Rahmen unserer Serviceleistungen sind wir für Sie der All-in-one-Ansprechpartner in Sachen Additiver Fertigung und allem was dazugehört. Wir bearbeiten Ihre Anfragen, kümmern uns um die Abwicklung und liefern Ihnen fertige Ergebnisse. Wir bezeichnen es auch gerne als unser "Rundum-Sorglos-Paket".
+            </p>
+          </div>
+        </div>
+        <!-- Panel 3 -->
+        <div>
+          <input type="checkbox" name="panel" id="panel-3" />
+          <label for="panel-3" class="copy-std">Wie schnell stehen Termine für einzelne Workshops/Webinare zur Verfügung? </label>
+          <div class="accordion__content accordion__content--large">
+            <p class="accordion__body copy-small col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              Termine sind flexibel und individuell nach Abstimmung buchbar. Hierbei berücksichtigen wir gerne Ihre Terminvorstellungen.
+            </p>
+          </div>
+        </div>
+        <!-- Panel 4 -->
+        <div>
+          <input type="checkbox" name="panel" id="panel-4" />
+          <label for="panel-4" class="copy-std">Wie gestaltet sich der Preis für einen Workshop/Webinar?</label>
+          <div class="accordion__content accordion__content--large">
+            <p class="accordion__body copy-small col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              Unsere Preise gestalten sich individuell je nach Anfrage. Zugeschnitten auf Ihre Anforderungen und Wünsche erstellen wir ein passendes Angebot für Sie.
+            </p>
+          </div>
+        </div>
+        <!-- Panel 5 -->
+        <div>
+          <input type="checkbox" name="panel" id="panel-5" />
+          <label for="panel-5" class="copy-std"> Wie gestaltet sich der Preis für eine Serviceleistung?</label>
+          <div class="accordion__content accordion__content--large">
+            <p class="accordion__body copy-small col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              Wenn Sie sich für eine unserer Serviceleistungen interessieren, erstellen wir gerne ein individuelles Angebot für Sie. Dieses ist abhängig von Art und Umfang der Anfrage. 
+            </p>
+          </div>
+        </div>
+        <!-- Panel 6 -->
+        <div>
+          <input type="checkbox" name="panel" id="panel-6" />
+          <label for="panel-6" class="copy-std">Können Serviceleistungen auch unabhängig von einem Workshop/Webinar in Anspruch genommen werden?</label>
+          <div class="accordion__content accordion__content--large">
+            <p class="accordion__body copy-small col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              Unser Serviceangebot im Rahmen des <u><a class="legal-link" href="part-screen.html">Part-Screening</a></u> sowie die Serviceleistungen rund um die <u><a class="legal-link" href="additive-processing.html">Additive Aufbereitung</a></u> können grundsätzlich auch ohne die Wahrnehmung eines Workshops oder Webinars in Anspruch genommen werden. Durch die Teilnahme an einem Workshop bzw. Webinar schaffen Sie allerdings ein besseres Verständnis für die Gesamtthematik und die Hintergründe der eigentlichen  Serviceleistung. Sie erhalten Einblicke in die Möglichkeiten und Potentiale, die wir Ihnen mit unseren  einzelnen Themenbereichen bieten können, wodurch Sie das volle Potential der Digital Value Chain noch gezielter ausschöpfen können.<br>
+              Für unsere Module rund um das Themenfeld des <u><a class="legal-link" href="digital-storage.html">Digitalen Lagers</a></u> ist die Buchung eines vorherigen Webinars obligatorisch. Hier erhalten Sie nicht nur wichtige Basisinformationen, sondern werden auch mit der Bedienung des hierfür entwickelten Online-Tools vertraut gemacht.
+            </p>
+          </div>
+        </div>
+        <!-- Panel 7 -->
+        <div>
+          <input type="checkbox" name="panel" id="panel-7" />
+          <label for="panel-7" class="copy-std">Muss ich die komplette Digital Value Chain nutzen oder sind auch nur einzelne Module auswählbar?</label>
+          <div class="accordion__content accordion__content--large">
+            <p class="accordion__body copy-small col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              Generell bauen alle Module unserer Digital Value Chain aufeinander auf. Wir begleiten die gesamte Wertschöpfungskette und gehen mit Ihnen Schritt für Schritt den Weg der Additiven Transformation in Ihrem Unternehmen.<br>
+              Selbstverständlich sind die einzelnen Module und Bausteine auch flexibel und nach Bedarf buchbar, sodass Sie genau die Leistungen erhalten, die Ihnen Mehrwerte liefern. <br>
+              Nehmen Sie bei Interesse gerne Kontakt zu uns auf. Wir beraten Sie gerne und finden gemeinsam mit Ihnen die richtigen Ansatzpunkte.
+            </p>
+          </div>
+        </div>
+        <!-- Panel 8 -->
+        <div>
+          <input type="checkbox" name="panel" id="panel-8" />
+          <label for="panel-8" class="copy-std">Finden die Workshops in meinem Unternehmen statt?</label>
+          <div class="accordion__content accordion__content--large">
+            <p class="accordion__body copy-small col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              Durch die individuelle Gestaltung unserer Workshops und die spezielle Abstimmung auf Ihre Bedürfnisse, sind wir auch in der finalen Ausgestaltung unter Einhaltung gewisser Rahmenbedingungen flexibel. <br>
+              Für einige Themenfelder empfehlen wir eine Durchführung vor Ort und kommen hierzu gerne persönlich für einen Workshop in Ihrem Hause vorbei. Für andere Module bieten sich schwerpunktmäßig onlinebasierte Termine in Form eines Webinares an.
+            </p>
+          </div>
+        </div>
+        <h2 class="copy-std-headline padding-30">Ablauf und Kontakt</h2>
+        <!-- Panel 9 -->
+        <div>
+          <input type="checkbox" name="panel" id="panel-9" />
+          <label for="panel-9" class="copy-std">Wie gestaltet sich der Anfrageprozess?</label>
+          <div class="accordion__content accordion__content--large">
+            <p class="accordion__body copy-small col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              Haben Sie Interesse an einem unserer Angebote, dann nehmen Sie über unser Kontaktformular Kontakt zu uns auf. Wir melden uns bei Ihnen und klären Sie in einem Erstgespräch über die Möglichkeiten auf und nehmen hier natürlich auch Ihre Interessen entgegen. <br>
+              Bei tieferführendem Interesse gestaltet sich der Folgeprozess über eine Angebotserstellung mit anschließendem Beauftragungsprozess.
+            </p>
+          </div>
+        </div>
+        <!-- Panel 10 -->
+        <div>
+          <input type="checkbox" name="panel" id="panel-10" />
+          <label for="panel-10" class="copy-std">Wie gestaltet sich der Bezahlungsprozess für Workshops, Webinare und Serviceleistungen?</label>
+          <div class="accordion__content accordion__content--large">
+            <p class="accordion__body copy-small col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              Nach der Beauftragung eines Angebotes und der erfolgreichen Abwicklung erhalten Sie von uns die dazugehörige Rechnung. Bezahlarten wie Kreditkartenzahlung, eine Bezahlung via Paypal oder Barzahlungen sind nicht vorgesehen. Hier bitten wir um Verständnis. 
+            </p>
+          </div>
+        </div>
+        <!-- Panel 11 -->
+        <div>
+          <input type="checkbox" name="panel" id="panel-11" />
+          <label for="panel-11" class="copy-std">Kontakt und Kundenservice?</label>
+          <div class="accordion__content accordion__content--large">
+            <p class="accordion__body copy-small col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              Dank unserer agilen Arbeitsweise mit flachen Hierarchien und unserer Arbeit in themenspezifischen Scrum-Teams sind wir in der Lage, schnell und flexibel auf Anfragen aller Art zu reagieren und Ihnen hierzu auch kurzfristige Rückmeldungen zu geben. 
+            </p>
+          </div>
+        </div>
+        <h2 class="copy-std-headline padding-30">Spezielle Fragen zur Additiven Fertigung</h2>
+        <!-- Panel 12 -->
+        <div>
+          <input type="checkbox" name="panel" id="panel-12" />
+          <label for="panel-12" class="copy-std">Welche 3D-Druck Verfahren gibt es?</label>
+          <div class="accordion__content accordion__content--large">
+            <p class="accordion__body copy-small col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              "Es gibt eine Vielzahl an additiven Fertigungsverfahren, die das Prinzip des schichtweisen Aufbaus von Bauteilen auf unterschiedliche Art und Weise realisieren. <br>
+              Wir bei Additive Manufacturing Solutions fokussieren uns vor allem auf die pulverbettbasierten Fertigungsverfahren für Kunststoff- und Metallteile (SLS/MJF/SLM). Mit diesen Verfahren stellen wir die Erfüllung der hohen Qualitätsanforderungen im Automotivesektor sicher, sodass wir eine Fertigung von Bauteilen in Originalteilqualität gewährleisten können. <br>
+              Selbstverständlich gibt es auch Anwendungsfälle, bei welchen der Einsatz anderer Technologievarianten sinnvoll ist. Aus diesem Grund bieten wir unseren Kunden generell eine breite Palette weiterer Fertigungsverfahren an. Durch regelmäßige Recherchen am Markt sind wir stets am Puls der Zeit und halten kontinuierlich Ausschau nach neuen Fertigungsverfahren und Materialen, die alle notwendigen Gütekriterien für spezifische Anwendungsfälle erfüllen."
+            </p>
+          </div>
+        </div>
+        <!-- Panel 13 -->
+        <div>
+          <input type="checkbox" name="panel" id="panel-13" />
+          <label for="panel-13" class="copy-std">Welche Materialien stehen für die Fertigung zur Verfügung?</label>
+          <div class="accordion__content accordion__content--large">
+            <p class="accordion__body copy-small col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              Zur Verfügung stehen Metalllegierungen und Silikone sowie eine breite Bandbreite verschiedener Polymere (PA12, PA11, PA6, …), die unter anderem auch Brandschutzanforderungen erfüllen.
+            </p>
+          </div>
+        </div>
+        <!-- Panel 14 -->
+        <div>
+          <input type="checkbox" name="panel" id="panel-14" />
+          <label for="panel-14" class="copy-std">Welche Bauteilgrößen sind umsetzbar?</label>
+          <div class="accordion__content accordion__content--large">
+            <p class="accordion__body copy-small col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              Standardmäßig sind Bauteile in einer Größe von 340 x 340 x 600 mm umsetzbar. Aber auch darüber hinaus bemühen wir uns gerne um passende Lösungsansätze für Ihre Anwendungsfälle, damit auch Sie schnell Ihre Wunschbauteile realisieren und Beschaffungsprobleme lösen können. 
+            </p>
+          </div>
+        </div>
+        <!-- Panel 15 -->
+        <div>
+          <input type="checkbox" name="panel" id="panel-15" />
+          <label for="panel-15" class="copy-std">Mit welchen Lieferzeiten ist zu rechnen?</label>
+            <div class="accordion__content accordion__content--large">
+                <p class="accordion__body copy-small col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                  Mit der Additiven Fertigung sind Bauteile wesentlich schneller und flexibler herstellbar, als mit konventionellen Fertigungsmethoden. Eine On-demand-Produktion für Kleinserien und auch Losgröße 1 ist möglich und kurzfristig realisierbar, wenn gewisse Prämissen im Rahmen der Möglichkeiten eingehalten werden. Speziell bei Langsamdreherteilen kann damit die Beschaffungszeit um bis zu 80% gesenkt werden.   <br>
+                  Zu beachten ist, dass ganz allgemein die Datenqualität sowie die Komplexität eines Bauteils wesentlich zur Gesamtdauer des Durchlaufprozesses beitragen.
+                </p>
+            </div>
+        </div>
+        <!-- .accordion -->
+      </div>
+  </section>
+  <div class="padding-100"></div>
+  <div class="padding-100"></div>
+  <div id="footer"></div>
+  <script>
+    $(document).ready(function(){
+      $('input:checkbox').click(function() {
+        $('input:checkbox').not(this).prop('checked', false);
+      });
+    });
+
+    function growDiv() {
+    var growDiv = document.getElementById('grow');
+  // if (growDiv.clientHeight) {
+  //   growDiv.style.height = 0;
+  // } else {
+    var wrapper = document.querySelector('div#grow div');
+    growDiv.style.height = wrapper.clientHeight + "px";
+    alert('checked'+wrapper.clientHeight);
+  }
+  // }
+  </script>
+  <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+</body>
+
+</html>

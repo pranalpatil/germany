@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daimler AM</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <script src="assets/js/bootstrap.js" charset="utf-8"></script>
+    <script src="assets/js/aos.js" charset="utf-8"></script>
+    <script src="assets/js/jquery.js" type="text/javascript" ></script>
+       <script>
+           $.get("header.html",function(response){
+               $("#header").html(response);
+           });
+           $.get("footer.html",function(response){
+               $("#footer").html(response);
+           });
+       </script>
+       
+  </head>
+  <body>
+    <div id="header">
+    </div>
+    <div onclick="closeNav()" id="hero-section" class="hero-section hero-section-homepage"> <!-- Hero Section start -->
+      <div class="container">
+        <div class="banner-container">
+          <div class="banner-light" data-aos="fade-left" data-aos-duration="700">
+            <h2 class="headline-hero">Die Komplettlösung für die additive</h2>
+          </div>
+          <div class="banner-light" data-aos="fade-left" data-aos-duration="700">
+            <h2 class="headline-hero">Transformation in Ihrem Unternehmen</h2>
+          </div>
+          <div style="margin-top: 20px; display: grid; justify-items: end;">
+            <div class="banner-dark" data-aos="fade-left" data-aos-duration="700" align="right">
+
+                <h2 class="copy-small-header">Ein guter Start in die Zukunft – Zum <a href="part-screen.html"><span class="copy-small-span">Part Screening</span> <span> <img src="assets/images/icons/link-arrow.png"> </span> </a></h2>
+
+            </div>
+            <div class="banner-dark" data-aos="fade-left" data-aos-duration="700" align="right"> 
+              <h2 class="copy-small-header">Erfahre mehr über <a href="about-us.html"><span class="copy-small-span">AMS</span> <span> <img src="assets/images/icons/link-arrow.png"> </span></a> </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-icon align-items-end">
+        <a href="#digital-value-chain"><img src="assets/images/icons/circle-arrow-down.png"></a>
+      </div>
+    </div> <!-- Hero Section end -->
+
+    <section id="digital-value-chain" class="home-section"> <!-- Section 1 Start -->
+      <div class="padding-100"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <h2 data-aos="fade-up" data-aos-duration="700" class="headline-h2">Digital Value Chain<span> – Unser Erfolgskonzept für Ihre Zukunft</span></h2>
+          </div>
+        </div>
+        <div class="section-container">
+          <div class="row">
+            <div data-aos="fade-up" data-aos-duration="700" class="col-lg-5 col-md-6">
+              <p class="copy-small">Wir bieten Ihnen ein einzigartiges Leistungsportfolio entlang der gesamten Wertschöpfungskette für eine erfolgreiche, additive Transformation in Ihrem Unternehmen.</p>
+              <p class="copy-small">Beginnend mit der Selektion von additiv herstellbaren Bauteilen im Part Screening, über die Additive Aufbereitung, welche die Bauteildigitalisierung, den Produktschutz und spezifische Oberflächengestaltungen umfasst, bis hin zur Bauteilfertigung und der Speicherung der Daten in einem Digitalen Lager. </p>
+              <p class="copy-small">Mit unseren individuell auf Sie abgestimmten Workshops zu diesen Themen, setzen Sie den Startschuss für die Additive Fertigung in Ihrem Unternehmen und sind mit unseren anknüpfenden Dienstleistungen optimal für die Zukunft vorbereitet.  </p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="700" class="offset-lg-1 col-lg-6 col-md-6 section1-img-lg">
+              <img src="assets\images\section1-heropage.png" alt="Digital Value Chain" style="width:100%;">
+            </div>
+            <div data-aos="fade-up" data-aos-duration="700" class="offset-lg-1 col-lg-6 col-md-6 section1-img-sm text-center">
+              <img src="assets\images\section1-heropage-sm.png" alt="Digital Value Chain" style="width:85%; max-width: 350px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  <!-- Section 1 end -->
+
+    <div class="padding-100"></div>
+
+    <section id="home-section2" class="home-section">  <!-- Section 2 start -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <h2 data-aos="fade-up" data-aos-duration="700" class="headline-h2">Wir lösen Probleme<span> – Bevor sie entstehen</span></h2>
+          </div>
+        </div>
+
+        <!-- LARGE SCREEN CARDS START -->
+
+        <div data-aos="fade-up" data-aos-duration="700" class="card-container card-lg-screen">
+          <div class="row card-alignment-fix">
+            <div class="col-lg card card-green no-bottom-padding">
+              <div class="card-icon daimler-green-gradient">
+                <img class="align-item-center" src="assets/images/icons/icon-Part-Screening.png" alt="Part Screening">
+              </div>
+              <div class="card-line"></div>  <!-- Verticle Line -->
+              <div class="card-text">
+                <h2 class="copy-std-headline">Part Screening</h2>
+                <p class="copy-small">Gemeinsam betrachten wir beim Part Screening Ihr Produktportfolio sowie Ihre individuellen Probleme in der Teileverfügbarkeit. Durch eine umfassende Analyse definieren wir Potenziale und erarbeiten ein Konzept zum Einsatz der Additiven Fertigung, um Ihre Probleme nachhaltig zu lösen.</p>
+              </div>
+              <div class="card-line"></div>  <!-- Verticle Line -->
+              <div class="btn-container">
+                <button onclick="location.href='part-screen.html#part-screening'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/information-light.png"></span> Workshop <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+                <button onclick="location.href='part-screen.html#part-screening'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/plus-light.png"></span> Serviceleistungen <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+              </div>
+              <div class="div-triangle"></div>
+              <img class="card-img" src="assets/images/image_Part_Screening.png">
+              <div onclick="location.href='part-screen.html'" class="card-text-link">
+                <img src="assets/images/icons/link-arrow-dark.png" class="card-img-fixed">
+                <h2 class="copy-std-headline">Starten Sie jetzt effektiv durch</h2>
+                <p class="copy-small">Erfahren Sie mehr über unser Part Screening und starten Sie jetzt in Ihre Zukunft mit der additiven Fertigung.</p>
+              </div>
+            </div>
+
+            <div class="col-lg card card-green no-bottom-padding">
+              <div class="card-icon daimler-green-gradient">
+                <img class="align-item-center" src="assets/images/icons/additive_Icon.png" alt="Part Screening">
+              </div>
+              <div class="card-line"></div>  <!-- Verticle Line -->
+              <div class="card-text">
+                <h2 class="copy-std-headline">Additive Aufbereitung</h2>
+                <p class="copy-small">Die Grundlage für die additive Fertigung von Bauteilen wird mit Hilfe der Additiven Aufbereitung geschaffen. Diese umfasst neben der Erstellung von 3D-Modellen, auch den Produktschutz durch exklusives Branding sowie die individuelle Oberflächengestaltung durch spezifische Texturierung. </p>
+              </div>
+              <div class="card-line"></div>  <!-- Verticle Line -->
+              <div class="btn-container">
+                <button onclick="location.href='additive-processing.html#additive-processing'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/information-light.png"></span> Workshop <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+                <button onclick="location.href='additive-processing.html#additive-processing'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/branding-icon.png"></span> Branding <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+                <button onclick="location.href='additive-processing.html#additive-processing'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/texture-icon.png"></span> Texturierung <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+                <button onclick="location.href='additive-processing.html#additive-processing'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/datacreation.png"></span> Datenerstellung <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+              </div>
+              <div class="div-triangle"></div>
+              <img class="card-img" src="assets/images/image-additive.png">
+              <div onclick="location.href='additive-processing.html'" class="card-text-link">
+                <img src="assets/images/icons/link-arrow-dark.png" class="card-img-fixed">
+                <h2 class="copy-std-headline">Schaffen Sie jetzt die notwendige Basis</h2>
+                <p class="copy-small">Erfahren Sie mehr über unsere Additive Aufbereitung und die einzigartigen Möglichkeiten, die wir Ihnen mit unseren individuellen Serviceleistungen und Workshops bieten.</p>
+              </div>
+            </div>
+
+            <div class="col-lg card card-green no-bottom-padding">
+              <div class="card-icon daimler-green-gradient">
+                <img class="align-item-center" src="assets/images/icons/storage-icon-light.png" alt="Part Screening">
+              </div>
+              <div class="card-line"></div>  <!-- Verticle Line -->
+              <div class="card-text">
+                <h2 class="copy-std-headline">Digitales Lager</h2>
+                <p class="copy-small">Für ein unkompliziertes und schnelles Datenmanagement bieten wir Ihnen Zugang auf ein komfortables Digitales Lager zur Speicherung Ihrer Daten als logistische Grundlage für die additive Transformation der Wertschöpfungskette Ihres Unternehmens.</p>
+              </div>
+              <div class="card-line"></div>  <!-- Verticle Line -->
+              <div class="btn-container">
+                <button onclick="location.href='digital-storage.html#digital-storage'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/information-light.png"></span> Workshop <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+                <button onclick="location.href='digital-storage.html#digital-storage'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/plus-light.png"></span> Serviceleistungen <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+                <button onclick="location.href='digital-storage.html#digital-storage'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/transformation.png"></span> Digitale Transformation <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+              </div>
+              <div class="div-triangle"></div>
+              <img class="card-img" src="assets/images/image-digitales.png">
+              <div onclick="location.href='digital-storage.html'" class="card-text-link">
+                <img src="assets/images/icons/link-arrow-dark.png" class="card-img-fixed">
+                <h2 class="copy-std-headline">Entscheiden Sie sich jetzt für Ihr Depot mit Mehrwert</h2>
+                <p class="copy-small">Erfahren Sie mehr über das Digitale Lager, dessen Mehrwerte und welche neue Möglichkeiten dies Ihrem Unternehmen bietet.</p>
+              </div>
+            </div>
+
+            <div class="imp-card-container col-lg">
+              <div class="card daimler-green-gradient card-green">
+              <div class="card-icon-light">
+                <img class="align-item-center" src="assets/images/icons/Schnelle_icon.png" alt="Part Screening">
+              </div>
+              <div class="card-line-light"></div>  <!-- Verticle Line -->
+              <div class="card-text">
+                <h2 class="copy-std-headline text-light">Bauteilfertigung und mehr...</h2>
+                <p class="copy-small text-light">Wir helfen Ihnen akute Probleme in der Teilebeschaffung zu lösen. Bei kurzfristigen Bedarfen und Lieferschwierigkeiten von Bauteilen, stehen wir Ihnen gerne mit unseren umfassenden Serviceleistungen der Bauteilfertigung zur Verfügung.</p>
+              </div>
+              <div class="card-line-light"></div>  <!-- Verticle Line -->
+              <div class="btn-container">
+                <button onclick="location.href='mailto:center-of-competence-3d-printing-028@daimler.com'" type="button" name="contactus" class="button-light copy-small"><span><img src="assets/images/icons/icon_email_dark.png"></span> Kontakt <span><img src="assets/images/icons/link-arrow-dark.png"></span></button>
+              </div>
+            </div>
+            <div class="col-lg card daimler-green-gradient card-green">
+              <div class="card-icon-light">
+                <img class="align-item-center" src="assets/images/icons/design.png" alt="Part Screening">
+              </div>
+              <div class="card-line-light"></div>  <!-- Verticle Line -->
+              <div class="card-text">
+                <h2 class="copy-std-headline text-light">Grafik-, Design- und 2D-Druck-Dienstleistungen</h2>
+                <p class="copy-small text-light">Unser Serviceportfolio beinhaltet neben Angeboten rund um die Additive Fertigung, auch auf Ihre Bedarfe abgestimmte 2D-Druck-Leistungen im Rahmen von Design, Grafik und Visualisierung. Ob Flyer, Poster oder Broschüren, wir unterstützen Sie gerne. Setzen Sie sich bei Interesse einfach mit uns in Verbindung! </p>
+              </div>
+              <div class="card-line-light"></div>  <!-- Verticle Line -->
+              <div class="btn-container">
+                <button onclick="location.href='mailto:center-of-competence-3d-printing-028@daimler.com'" type="button" name="contactus" class="button-light copy-small"><span><img src="assets/images/icons/icon_email_dark.png"></span> Kontakt <span><img src="assets/images/icons/link-arrow-dark.png"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- LARGE SCREEN CARDS END -->
+
+        <!-- SMALL SCREEN CARDS START -->
+        <div class="card-container card-mid-screen-display">
+          <div class="card-alignment-fix-inner card-mid-screen">
+            <div class="col-md-5 col-sm-12 col-xs-12 card card-green no-bottom-padding">
+              <div class="card-icon daimler-green-gradient">
+                <img class="align-item-center" src="assets/images/icons/icon-Part-Screening.png" alt="Part Screening">
+              </div>
+              <div class="card-line"></div>  <!-- Verticle Line -->
+              <div class="card-text">
+                <h2 class="copy-std-headline">Part Screening</h2>
+                <p class="copy-small">Gemeinsam betrachten wir beim Part Screening Ihr Produktportfolio sowie Ihre individuellen Probleme in der Teileverfügbarkeit. Durch eine umfassende Analyse definieren wir Potenziale und erarbeiten ein Konzept zum Einsatz der Additiven Fertigung, um Ihre Probleme nachhaltig zu lösen.</p>
+              </div>
+              <div class="card-line"></div>  <!-- Verticle Line -->
+              <div class="btn-container">
+                <button onclick="location.href='part-screen.html#part-screening'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/information-light.png"></span> Workshop <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+                <button onclick="location.href='part-screen.html#part-screening'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/plus-light.png"></span> Serviceleistungen <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+              </div>
+              <div class="div-triangle"></div>
+              <img class="card-img" src="assets/images/image_Part_Screening.png">
+              <div onclick="location.href='part-screen.html'" class="card-text-link">
+                <img src="assets/images/icons/link-arrow-dark.png" class="card-img-fixed">
+                <h2 class="copy-std-headline">Starten Sie jetzt effektiv durch</h2>
+                <p class="copy-small">Erfahren Sie mehr über unser Part Screening und starten Sie jetzt in Ihre Zukunft mit der additiven Fertigung.</p>
+              </div>
+            </div>
+
+            <div class="col-md-5 col-sm-12 col-xs-12 card card-green no-bottom-padding">
+              <div class="card-icon daimler-green-gradient">
+                <img class="align-item-center" src="assets/images/icons/additive_Icon.png" alt="Part Screening">
+              </div>
+              <div class="card-line"></div>  <!-- Verticle Line -->
+              <div class="card-text">
+                <h2 class="copy-std-headline">Additive Aufbereitung</h2>
+                <p class="copy-small">Die Grundlage für die additive Fertigung von Bauteilen wird mit Hilfe der Additiven Aufbereitung geschaffen. Diese umfasst neben der Erstellung von 3D-Modellen, auch den Produktschutz durch exklusives Branding sowie die individuelle Oberflächengestaltung durch spezifische Texturierung. </p>
+              </div>
+              <div class="card-line"></div>  <!-- Verticle Line -->
+              <div class="btn-container">
+                <button onclick="location.href='additive-processing.html#additive-processing'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/information-light.png"></span> Workshop <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+                <button onclick="location.href='additive-processing.html#additive-processing'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/branding-icon.png"></span> Branding <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+                <button onclick="location.href='additive-processing.html#additive-processing'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/texture-icon.png"></span> Texturierung <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+                <button onclick="location.href='additive-processing.html#additive-processing'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/datacreation.png"></span> Datenerstellung <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+              </div>
+              <div class="div-triangle"></div>
+              <img class="card-img" src="assets/images/image-additive.png">
+              <div onclick="location.href='additive-processing.html'" class="card-text-link">
+                <img src="assets/images/icons/link-arrow-dark.png" class="card-img-fixed">
+                <h2 class="copy-std-headline">Schaffen Sie jetzt die notwendige Basis</h2>
+                <p class="copy-small">Erfahren Sie mehr über unsere Additive Aufbereitung und die einzigartigen Möglichkeiten, die wir Ihnen mit unseren individuellen Serviceleistungen und Workshops bieten.</p>
+              </div>
+            </div>
+
+            <div class="col-md-5 col-sm-12 col-xs-12 card card-green no-bottom-padding">
+              <div class="card-icon daimler-green-gradient">
+                <img class="align-item-center" src="assets/images/icons/storage-icon-light.png" alt="Part Screening">
+              </div>
+              <div class="card-line"></div>  <!-- Verticle Line -->
+              <div class="card-text">
+                <h2 class="copy-std-headline">Digitales Lager</h2>
+                <p class="copy-small">Für ein unkompliziertes und schnelles Datenmanagement bieten wir Ihnen Zugang auf ein komfortables Digitales Lager zur Speicherung Ihrer Daten als logistische Grundlage für die additive Transformation der Wertschöpfungskette Ihres Unternehmens.</p>
+              </div>
+              <div class="card-line"></div>  <!-- Verticle Line -->
+              <div class="btn-container">
+                <button onclick="location.href='digital-storage.html#digital-storage'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/information-light.png"></span> Workshop <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+                <button onclick="location.href='digital-storage.html#digital-storage'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/plus-light.png"></span> Serviceleistungen <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+                <button onclick="location.href='digital-storage.html#digital-storage'" type="button" name="button" class="button-dark copy-small"><span><img src="assets/images/icons/transformation.png"></span> Digitale Transformation <span> <img src="assets/images/icons/link-arrow.png"> </span> </button>
+              </div>
+              <div class="div-triangle"></div>
+              <img class="card-img" src="assets/images/image-digitales.png">
+              <div onclick="location.href='digital-storage.html'" class="card-text-link">
+                <img src="assets/images/icons/link-arrow-dark.png" class="card-img-fixed">
+                <h2 class="copy-std-headline">Entscheiden Sie sich jetzt für Ihr Depot mit Mehrwert</h2>
+                <p class="copy-small">Erfahren Sie mehr über das Digitale Lager, dessen Mehrwerte und welche neue Möglichkeiten dies Ihrem Unternehmen bietet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="imp-card-container-tab">
+            <div class="col-md-5 col-sm-12 col-xs-12 card daimler-green-gradient card-green margin-xs-0">
+            <div class="card-icon-light">
+              <img class="align-item-center" src="assets/images/icons/Schnelle_icon.png" alt="Part Screening">
+            </div>
+            <div class="card-line-light"></div>  <!-- Verticle Line -->
+            <div class="card-text">
+              <h2 class="copy-std-headline text-light">Bauteilfertigung und mehr...</h2>
+              <p class="copy-small text-light">Wir helfen Ihnen akute Probleme in der Teilebeschaffung zu lösen. Bei kurzfristigen Bedarfen und Lieferschwierigkeiten von Bauteilen, stehen wir Ihnen gerne mit unseren umfassenden Serviceleistungen der Bauteilfertigung zur Verfügung.</p>
+            </div>
+            <div class="card-line-light"></div>  <!-- Verticle Line -->
+            <div class="btn-container">
+              <button onclick="location.href='mailto:center-of-competence-3d-printing-028@daimler.com'" type="button" name="contactus" class="button-light copy-small"><span><img src="assets/images/icons/icon_email_dark.png"></span> Kontakt <span><img src="assets/images/icons/link-arrow-dark.png"></span></button>
+            </div>
+          </div>
+          <div class="col-lg card daimler-green-gradient card-green">
+              <div class="card-icon-light">
+                <img class="align-item-center" src="assets/images/icons/design.png" alt="Part Screening">
+              </div>
+              <div class="card-line-light"></div>  <!-- Verticle Line -->
+              <div class="card-text">
+                <h2 class="copy-std-headline text-light">Grafik-, Design- und 2D-Druck-Dienstleistungen</h2>
+                <p class="copy-small text-light">Unser Serviceportfolio beinhaltet neben Angeboten rund um die Additive Fertigung, auch auf Ihre Bedarfe abgestimmte 2D-Druck-Leistungen im Rahmen von Design, Grafik und Visualisierung. Ob Flyer, Poster oder Broschüren, wir unterstützen Sie gerne. Setzen Sie sich bei Interesse einfach mit uns in Verbindung! </p>
+              </div>
+              <div class="card-line-light"></div>  <!-- Verticle Line -->
+              <div class="btn-container">
+                <button onclick="location.href='mailto:center-of-competence-3d-printing-028@daimler.com'" type="button" name="contactus" class="button-light copy-small"><span><img src="assets/images/icons/icon_email_dark.png"></span> Kontakt <span><img src="assets/images/icons/link-arrow-dark.png"></span></button>
+              </div>
+            </div>
+          </div>
+        <!-- SMALL SCREEN CARDS END -->
+
+        </div>
+    </section>  <!-- Section 2 end -->
+
+    <div class="padding-100"></div>
+
+    <section id="quick-help" class="quick-help">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+            <h2 data-aos="fade-up" data-aos-duration="700" class="headline-h2">Schnelle Hilfe<span> – Schwierigkeiten bei der Teilebeschaffung?</span></h2>
+            <div data-aos="fade-up" data-aos-duration="700" class="col-lg-9">
+              <p class="copy-small quick-help-text">Haben Sie akute Probleme mit der Beschaffung von Bauteilen, mit langen Lieferzeiten und fehlenden Lieferanten? Dann ist die Bauteilbeschaffung mit AMS genau das Richtige für Sie. </p>
+              <p class="copy-small quick-help-text">Wir helfen Ihnen Lieferschwierigkeiten aktuell und für die Zukunft aus der Welt zu schaffen. </p>
+            </div>
+            <div class="col-lg-9 timeline">
+              <ol>
+                <li data-aos="fade-right" data-aos-duration="700">
+                  <h2 class="copy-std-headline">Kontaktieren Sie uns</h2>
+                  <p class="copy-small">Stellen Sie jetzt eine unverbindliche Anfrage und senden Sie uns gerne bereits vorab Anforderungen (Materialbeschreibung, Größenparameter, Stückzahl, Bilder etc.) der betreffenden Bauteile zu.</p>
+                  <button onclick="location.href='mailto:center-of-competence-3d-printing-028@daimler.com'" type="button" name="contactus" class="button-light copy-small btn-lg-screen"><span><img src="assets/images/icons/icon_email_dark.png"></span> center-of-competence-3d-printing-028@daimler.com <span><img src="assets/images/icons/link-arrow-dark.png"></span></button>
+                  <button onclick="location.href='mailto:center-of-competence-3d-printing-028@daimler.com'" type="button" name="contactus" class="button-light copy-small btn-sm-screen"><span><img src="assets/images/icons/icon_email_dark.png"></span> E-Mail schicken <span><img src="assets/images/icons/link-arrow-dark.png"></span></button>
+                </li>
+                <li data-aos="fade-right" data-aos-duration="700">
+                  <h2 class="copy-std-headline">Machbarkeitsanalyse</h2>
+                  <p class="copy-small">Wir kontaktiere Sie und besprechen alle nötigen Informationen sowie die Machbarkeit und den weiteren Ablauf der Bauteilfertigung in einem Erstgespräch.</p>
+                </li>
+                <li data-aos="fade-right" data-aos-duration="700">
+                  <h2 class="copy-std-headline">Individuelles Lösungskonzept</h2>
+                  <p class="copy-small">Nachdem die Machbarkeit der angefragten Bauteile positiv geprüft wurde erarbeiten wir ein Lösungskonzept für Ihr individuelles Problem und zeigen Ihnen mögliche Wege zu Bauteilumsetzung auf.</p>
+                </li>
+                <li data-aos="fade-right" data-aos-duration="700">
+                  <h2 class="copy-std-headline">Bauteilfertigung</h2>
+                  <p class="copy-small">  Sofern alle notwendigen Voraussetzungen geschaffen wurden, werden die Bauteile gefertigt und anschließend an Sie ausgeliefert. Des Weiteren können Sie die Möglichkeit unseres Digitalen Lagers nutzen, um auch künftig auf Ihre Daten zugreifen zu können.</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div data-aos="fade-left" data-aos-duration="700" class="col-lg-3 col-sm-12 col-xs-12 text-center section1-img-lg d-md-none d-lg-block">
+            <img src="assets/images/quick-help-picture.png" class="image-fluid img-80">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="footer"></div>
+
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+  </body>
+</html>
