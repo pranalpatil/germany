@@ -1078,85 +1078,95 @@ color:white;
   margin: 1.875rem 0; /* 30px */
 }
 
-/* * Accordion */
-/* Basic Accordion Styles */
- .accordion {
-
+/*ACCORDIAN*/
+.accordion-menu {
+   display: block;
+   position: relative;
+   border-radius: 5px;
 }
- .accordion input[name="panel"] {
-   display: none;
+.accordion-menu h2 {
+   display: block;
+   margin: 0;
+   cursor: pointer;
+   padding: 18px 40px 18px 20px;
 }
- .accordion label {
-    position: relative;
-    margin-top: -0.0625rem;
-    display: flex;
-    padding: 1.125rem 4rem 1.125rem 2rem;
-    border-top: 1px solid var(--daimler-dark-grey);
-    border-bottom: 1px solid var(--daimler-dark-grey);
-    font-size: 1.5em;
-    color: var(--daimler-black);
-    cursor: pointer;
-    align-content: center;
-    align-items: center;
-  }
- .accordion label:after {
-  font-family: "DaimlerCS-Bold";
-  font-size: 2rem;
-   content: "+";
-   position: absolute;
-   line-height: 1.5em !important;
-   right: 2rem;
-   color: var(--daimler-black);
-   text-align: center;
+.accordion-menu p {
+   margin-top: -20px;
+   max-height: 0;
+   padding: 0 40px 0 20px;
+   opacity: 0;
+   transform: translate(0, 50%);
 }
- .accordion label:hover {
-   /*border: 0px solid var(--daimler-green-100);*/
+.accordion-menu ul {
+   list-style: none;
+   perspective: 900;
+   padding: 0;
+   margin: 0;
+   background-color: #fff;
+}
+.accordion-menu ul li {
+   position: relative;
+   padding: 0;
+   margin: -1px;
+   border-top: 1px solid var(--daimler-black);
+   border-bottom: 1px solid var(--daimler-black);
+}
+.accordion-menu ul li:hover{
    background-color: var(--daimler-light-grey);
 }
-.accordion label:hover::after {
+.accordion-menu ul li:hover .accordian-icon:after{
    content: '\00D7';
 }
- .accordion input:checked + label {
-   color: var(--daimler-black);
-   border: none;
-   border-top: 1px solid var(--daimler-dark-grey) !important;
+
+.accordion-menu ul li:nth-of-type(1) { animation-delay: 0.5s; }
+.accordion-menu ul li:nth-of-type(2) { animation-delay: 0.75s; }
+.accordion-menu ul li:nth-of-type(3) { animation-delay: 1.0s; }
+
+.accordion-menu ul li .accordian-icon {
+   position: absolute;
+   transform: translate(-2.5rem, 0);
+   margin-top: 0;
+   right: 0;
 }
- .accordion input:checked + label:after {
+.accordion-menu ul li .fas{
+   color:#f6483b;
+   font-size: 15px;
+   margin-right: 10px;
+}
+.accordion-menu ul li .accordian-icon:after {
+   content: "+";
+   position: absolute;
+   font-size: 2rem;
+   line-height: 4rem;
+}
+.accordion-menu ul li input[type=checkbox]:checked ~ .accordian-icon:after {
    content: "-";
-  /* adjsut line-height to vertically center icon */
-   line-height: 1.5em;
 }
- .accordion .accordion__content {
-   overflow: hidden;
-   height: 0rem; /* 0px */
+.accordion-menu ul li input[type=checkbox] {
+   position: absolute;
+   cursor: pointer;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   opacity: 0;
+}
+.accordion-menu ul li input[type=checkbox]:checked ~ p {
    position: relative;
-   padding: 0 2rem; /* 18px */
-   background: var(--daimler-white);
-   color: var(--daimler-black);
-   /*transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);*/
-   transition: all 0.5s ease-in-out;
+   overflow: hidden;
+   max-height: 800px;
+   opacity: 1;
+   transform: translate(0, 0);
+   margin-top: 20px;
+   z-index: 2;
 }
- .accordion .accordion__content .accordion__header {
-   padding: 1em 0;
+.transition, p, ul li .accordian-icon:before, ul li .accordian-icon:after {
+   transition: all 0.25s ease-in-out;
 }
- .accordion .accordion__content .accordion__body {
-   font-size: 1rem;
-   line-height: 1.4em;
-}
-/* * Size Variations */
- input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
-   height: 300px; /* 200px*/
-   overflow-y: visible;
-}
-#grow {
-  -moz-transition: height .5s;
-  -ms-transition: height .5s;
-  -o-transition: height .5s;
-  -webkit-transition: height .5s;
-  transition: height .5s;
-  height: 0;
-  overflow: hidden;
-  outline: 1px solid red;
+
+.no-select, h2 {
+   -webkit-tap-highlight-color: transparent;
+   -webkit-touch-callout: none;
+   user-select: none;
 }
 
 .navtop-df{
@@ -1308,25 +1318,25 @@ a {text-decoration: none; color: var(--daimler-black);}
 }
 .legal-popup .legal-popup-container{
   width: 60%;
-    position: absolute;
-    padding: 0;
-    background-color: var(--daimler-white);
-    padding: 1.5em;
-    word-break: break-word;
+  position: absolute;
+  padding: 0;
+  background-color: var(--daimler-white);
+  padding: 1.5em;
+  word-break: break-word;
 }
 
 .close-popup{
   position: absolute;
-    top: 0;
-    right: 0;
-    background-color: var(--daimler-black);
-    padding: 0.4em 0.3em 0.6em;
-    color: var(--daimler-white);
-    font-weight: bold;
-    font-size: 2em;
-    line-height: 0.3em;
-    cursor: pointer;
-  }
+  top: 0;
+  right: 0;
+  background-color: var(--daimler-black);
+  padding: 0.4em 0.3em 0.6em;
+  color: var(--daimler-white);
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 0.3em;
+  cursor: pointer;
+}
 
 .close-popup:before{
   content: '\00D7';
